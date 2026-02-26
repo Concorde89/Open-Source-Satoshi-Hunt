@@ -5,25 +5,31 @@
 https://github.com/Concorde89/Open-Source-Satoshi-Hunt
 ```
 
-## SHA-256 Hash
-```
-6e1baf4991b79a58777ed02a8aa97a92ce9e648122de7620316910a136fb828e
-```
+## Solana Imprint (AutoIncentive Facilitator)
 
-## Timestamp
-- **Date:** February 26, 2026
-- **Method:** OpenTimestamps (Bitcoin blockchain)
-- **Proof file:** `IMPRINT.ots`
+| Field | Value |
+|-------|-------|
+| **Hash** | `6e1baf4991b79a58777ed02a8aa97a92` |
+| **Transaction** | `4ZEwws6Z94uUUepdnGRE4Rdmmcrr43EvVJYbjFmmfLLHskAsYJr7uDxjzQX2xDTPRAiwmDBayz7dmTp1QwPbPLzU` |
+| **Explorer** | [View on Solscan](https://solscan.io/tx/4ZEwws6Z94uUUepdnGRE4Rdmmcrr43EvVJYbjFmmfLLHskAsYJr7uDxjzQX2xDTPRAiwmDBayz7dmTp1QwPbPLzU) |
+| **Date** | February 26, 2026 |
+| **Method** | AutoIncentive Imprint Facilitator |
 
 ## Verification
 
-To verify this timestamp:
+Anyone can verify this timestamp:
 
-1. Install OpenTimestamps: `pip install opentimestamps-client`
-2. Run: `ots verify IMPRINT.ots`
+1. Go to [Solscan](https://solscan.io/tx/4ZEwws6Z94uUUepdnGRE4Rdmmcrr43EvVJYbjFmmfLLHskAsYJr7uDxjzQX2xDTPRAiwmDBayz7dmTp1QwPbPLzU)
+2. Check the memo: `IMPRINT:v1:6e1baf4991b79a58777ed02a8aa97a92`
+3. Hash the URL yourself: `echo -n "https://github.com/Concorde89/Open-Source-Satoshi-Hunt" | sha256sum`
+4. Compare the first 32 characters
 
-Or use the web verifier: https://opentimestamps.org/
+If they match, this URL was timestamped at that block time.
 
 ## What This Proves
 
-This cryptographic timestamp proves that the URL `https://github.com/Concorde89/Open-Source-Satoshi-Hunt` existed at the time the Bitcoin block was mined. The proof is permanently anchored to the Bitcoin blockchain and can be independently verified by anyone.
+This cryptographic timestamp proves that the Open Source Satoshi Hunt project existed at the time the Solana transaction was confirmed. The proof is permanently anchored to the Solana blockchain and can be independently verified by anyone.
+
+---
+
+*Imprinted via [AutoIncentive Timestamp Facilitator](https://timestamp.x402endpoints.online)*
